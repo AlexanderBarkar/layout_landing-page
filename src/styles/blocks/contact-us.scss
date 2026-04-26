@@ -26,6 +26,7 @@
       font-weight: 400;
       line-height: 140%;
       box-sizing: border-box;
+      cursor: text;
 
       &:hover {
         border-color: #d5d7de;
@@ -42,6 +43,14 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 140%;
+      }
+
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0px 1000px #f8f8fa inset;
+        -webkit-text-fill-color: $main-text-color;
+        transition: background-color 5000s ease-in-out 0s;
       }
     }
 
@@ -83,6 +92,14 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 140%;
+    }
+
+    a {
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
