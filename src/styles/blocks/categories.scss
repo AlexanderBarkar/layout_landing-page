@@ -38,11 +38,16 @@
     &__photos {
       display: grid;
       grid-template-columns: 2fr 1fr;
-      gap: 24px;
+      gap: 16px;
       margin-bottom: 16px;
-      height: 200px;
+      height: 130px;
 
       @include onTablet {
+        gap: 24px;
+        height: 184px;
+      }
+
+      @include onDesktop {
         height: 324px;
       }
     }
