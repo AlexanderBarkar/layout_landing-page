@@ -40,11 +40,9 @@
       grid-template-columns: 2fr 1fr;
       gap: 24px;
       margin-bottom: 16px;
-      height: 0;
-      padding-bottom: 32%;
+      height: 200px;
 
       @include onTablet {
-        padding-bottom: 0;
         height: 324px;
       }
     }
